@@ -13,8 +13,8 @@ repository.workspace = true
 version.workspace = true
 
 [lib]
-# using "lib" so this crate can be referenced and used directly by rust and "cdylib" so it can be used as a dynamic lib
-crate-type = ["lib", "cdylib"]
+# using "lib" so this crate can be referenced and used directly by rust and "staticlib" so it can be used as a static lib
+crate-type = ["lib", "staticlib"]
 
 [dependencies]
 cavalier_contours = {version = "0.4", path = "../cavalier_contours"}
